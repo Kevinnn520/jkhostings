@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Planes Minecraft - JKHosting</title>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="imagenes/jk.png" alt="Logo" class="logo">
+            <h1>JKHosting</h1>
+        </div>
+    </header>
+    <main>
+        <section id="planes-minecraft">
+            <h2>Planes Minecraft</h2>
+            <div class="plan plan-rojo">
+                <h3>Minecraft #1</h3>
+                <p>2GB RAM DDR5</p>
+                <p>200% CPU @ 5.4Ghz</p>
+                <p>Unlimited SSD</p>
+                <p>8 Backup</p>
+                <p>8 Database</p>
+                <p>💳 PRECIO $4.70</p>
+                <p>📡 - Mensual</p>
+            </div>
+            <div class="plan plan-rojo">
+                <h3>Minecraft #2</h3>
+                <p>4GB RAM DDR5</p>
+                <p>300% CPU @ 5.4Ghz</p>
+                <p>Unlimited SSD</p>
+                <p>8 Backup</p>
+                <p>8 Database</p>
+                <p>💳 PRECIO $6.90</p>
+                <p>📡 - Mensual</p>
+            </div>
+        </section>
+        <div class="buttons-container">
+            <button onclick="generarTicket()">Pedir Ticket</button>
+            <button onclick="window.location.href='https://discord.gg/YZBF5DzDXN'">Unirme al Discord</button>
+        </div>
+        <section id="canje">
+            <h2>Canjear Código</h2>
+            <div class="canje-container">
+                <input type="text" id="codigo" placeholder="Ingresa tu código">
+                <button onclick="canjearCodigo('minecraft')">Canjear</button>
+                <p id="mensaje"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

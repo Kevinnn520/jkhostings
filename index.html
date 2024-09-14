@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JKHosting</title>
+    <script>
+        function mostrarOpciones() {
+            document.getElementById('opciones').style.display = 'flex';
+        }
+    </script>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-inner"></div>
+    </div>
+    <header>
+        <div class="header-content">
+            <img src="imagenes/jk.png" alt="Logo de JKHosting" class="logo">
+            <h1>JKHosting</h1>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Elige tu Hosting</h2>
+            <button onclick="mostrarOpciones()">Crear Servidor</button>
+        </section>
+        <section id="opciones" style="display:none;">
+            <div class="opcion">
+                <a href="hosting_samp.html">Hosting SAMP</a>
+                <p>El mejor hosting para servidores SAMP con alta disponibilidad y soporte 24/7.</p>
+            </div>
+            <div class="opcion">
+                <a href="hosting_mta.html">Hosting MTA</a>
+                <p>Optimizado para servidores MTA, con protección DDoS y rendimiento superior.</p>
+            </div>
+            <div class="opcion">
+                <a href="hosting_minecraft.html">Hosting Minecraft</a>
+                <p>Hospeda tu servidor de Minecraft con hardware de última generación y soporte dedicado.</p>
+            </div>
+        </section>
+        <div id="quien-somos">
+            <h2>¿Quién somos?</h2>
+            <p>Ofrecemos servidores de juegos de alta calidad y rendimiento en el que puedes confiar, junto a la asistencia que cada cliente necesita y merece.</p>
+        </div>
+        <div id="features">
+            <div class="feature">
+                <img src="imagenes/icono1.png" alt="Icono de Hardware de Alto Rendimiento">
+                <p>Hardware de Alto Rendimiento</p>
+                <p>Solo utilizamos hardware empresarial de alta calidad, garantizando un rendimiento óptimo para todos tus proyectos.</p>
+            </div>
+            <div class="feature">
+                <img src="imagenes/icono2.png" alt="Icono de Protección contra DDoS">
+                <p>Protección contra DDoS</p>
+                <p>Nuestros planes de alojamiento están protegidos con sistemas avanzados de mitigación DDoS, asegurando que tu servidor esté siempre seguro.</p>
+            </div>
+            <div class="feature">
+                <img src="imagenes/icono3.png" alt="Icono de 100% Uptime">
+                <p>100% Uptime</p>
+                <p>Trabajamos día y noche para garantizar un tiempo de actividad del 100%, manteniendo tu servidor en línea sin interrupciones.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.add('loaded');
+            }, 1000); // 1000 milisegundos = 5 segundos
+        });
+    </script>
+</body>
+</html>
